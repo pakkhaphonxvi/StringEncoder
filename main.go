@@ -44,11 +44,11 @@ func encodeToHex(input string) string {
 				putPercent += "%00%" + string(char_2)
 				formatFound = true
 			}
-			fmt.Println(char_2_count)
 		}
 		sumEncode += putPercent
 		putPercent = ""
 		formatFound = false
+		char_2_count = 0
 	}
 	return sumEncode
 }
